@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import datetime
-st.textbox("enter farm name")
+st.text_input("enter farm name")
 # Placeholder data 
 farm_data = {
     'Farm Name': [a,b,c],
