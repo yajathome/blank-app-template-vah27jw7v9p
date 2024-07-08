@@ -1,7 +1,21 @@
 import streamlit as st
 import pandas as pd
 import datetime
-st.text_input("enter farm name")
+a=st.text_input("enter farm name")
+b=st.text_input("enter farm name")
+c=st.text_input("enter farm name")
+d=st.text_input("enter location name")
+e=st.text_input("enter location name")
+f=st.text_input("enter location name")
+g=st.text_input("enter crop name")
+h=st.text_input("enter crop name")
+i=st.text_input("enter crop name")
+j=st.text_input("enter livestock name")
+k=st.text_input("enter livestock name")
+l=st.text_input("enter livestock name")
+m=st.text_input("enter area name")
+n=st.text_input("enter area name")
+o=st.text_input("enter area name")
 # Placeholder data 
 farm_data = {
     'Farm Name': [a,b,c],
