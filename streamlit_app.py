@@ -1,28 +1,17 @@
+​
+Yajat Singhal
+​
 import streamlit as st
 import pandas as pd
 import datetime
-a=st.text_input("enter farm name")
-b=st.text_input("enter farm name")
-c=st.text_input("enter farm name")
-d=st.text_input("enter location name")
-e=st.text_input("enter location name")
-f=st.text_input("enter location name")
-g=st.text_input("enter crop name")
-h=st.text_input("enter crop name")
-i=st.text_input("enter crop name")
-j=st.text_input("enter livestock name")
-k=st.text_input("enter livestock name")
-l=st.text_input("enter livestock name")
-m=st.text_input("enter area name")
-n=st.text_input("enter area name")
-o=st.text_input("enter area name")
+
 # Placeholder data 
 farm_data = {
-    'Farm Name': [a,b,c],
-    'Location': [d, e, f],
-    'Crop': [g,h,i],
-    'Livestock': [j, k, l],
-    'Area (acres)': [m, n, o]
+    'Farm Name': ['Farm A', 'Farm B', 'Farm C'],
+    'Location': ['Location A', 'Location B', 'Location C'],
+    'Crop': ['Wheat', 'Corn', 'Soybean'],
+    'Livestock': ['Cattle', 'Pigs', 'Chickens'],
+    'Area (acres)': [100, 200, 150]
 }
 
 df = pd.DataFrame(farm_data)
@@ -32,7 +21,7 @@ def main():
 
     # Sidebar with options
     st.sidebar.title('Menu')
-    page = st.sidebar.radio('Select a page', ['Home', 'Crop Management', 'Livestock Tracking', 'Tasks'])
+    page = st.sidebar.radio('Select a page', ['Home', 'Crop Management', 'Livestock Tracking',  'Tasks'])
 
     if page == 'Home':
         st.subheader('Farm Overview')
@@ -62,6 +51,7 @@ def main():
         st.write(f"**Location:** {livestock_info['Location']}")
         st.write(f"**Area (acres):** {livestock_info['Area (acres)']}")
 
+
     elif page == 'Tasks':
         st.subheader('Task Management')
         st.write('Manage your farm tasks here.')
@@ -72,6 +62,5 @@ def main():
     
 if __name__ == '__main__':
     main()
-
 
 
