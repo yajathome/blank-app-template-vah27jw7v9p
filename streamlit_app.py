@@ -48,11 +48,6 @@ def main():
         st.write(f"**Location:** {livestock_info['Location']}")
         st.write(f"**Area (acres):** {livestock_info['Area (acres)']}")
 
-    elif page == 'Weather':
-        st.subheader('Weather Information')
-        # Placeholder for weather API integration or static data
-        st.write('Weather information will be displayed here.')
-
     elif page == 'Tasks':
         st.subheader('Task Management')
         st.write('Manage your farm tasks here.')
