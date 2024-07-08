@@ -18,7 +18,7 @@ def main():
 
     # Sidebar with options
     st.sidebar.title('Menu')
-    page = st.sidebar.radio('Select a page', ['Home', 'Crop Management', 'Livestock Tracking', 'Weather', 'Tasks'])
+    page = st.sidebar.radio('Select a page', ['Home', 'Crop Management', 'Livestock Tracking', 'Tasks'])
 
     if page == 'Home':
         st.subheader('Farm Overview')
