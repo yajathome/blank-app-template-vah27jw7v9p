@@ -1,14 +1,14 @@
 import streamlit as st
 import pandas as pd
 import datetime
-
+st.textbox("enter farm name")
 # Placeholder data 
 farm_data = {
-    'Farm Name': ['Farm A', 'Farm B', 'Farm C'],
-    'Location': ['Location A', 'Location B', 'Location C'],
-    'Crop': ['Wheat', 'Corn', 'Soybean'],
-    'Livestock': ['Cattle', 'Pigs', 'Chickens'],
-    'Area (acres)': [100, 200, 150]
+    'Farm Name': [a,b,c],
+    'Location': [d, e, f],
+    'Crop': [g,h,i],
+    'Livestock': [j, k, l],
+    'Area (acres)': [m, n, o]
 }
 
 df = pd.DataFrame(farm_data)
